@@ -14,10 +14,11 @@ define('CONTROLLER_DEFAULT', 'index');
 define('ACTION_DEFAULT', 'index');
 
 //CAU HINH DATABASE
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','test');
-define('DB_TABLE','group');
+// IMPORTANT: Set these values via environment variables or a local config file
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
+define('DB_NAME', getenv('DB_NAME') ?: 'test');
+define('DB_TABLE', 'group');
 
 ?>
